@@ -94,7 +94,14 @@ def pascal(n):
         return [1] + [N[i] + N[i+1] for i in range(n-1)] + [1]
 
 
+def devide(num1, num2):
+    if (num1 - num2) < 0:
+        return 0
+    return 1 + devide(num1 - num2, num2)
+
 if __name__ == '__main__':
+    print(devide(15, 5))
+
     # myLinkedList = SortedLinkedList()
     # myLinkedList.add(1)
     # myLinkedList.add(4)
@@ -103,7 +110,7 @@ if __name__ == '__main__':
     # print(myLinkedList)
 
     # check_two_sum([2, 3, 7, 1, 4, 11, 15,1,4], 5)
-    print(missing_number([0,1,2,4,5,6,7,8,9,10]))
+    #print(missing_number([0,1,2,4,5,6,7,8,9,10]))
     # print(contains_duplicate([1,2,3,2,5,6,7,8,9,10]))
     # print(max_sub_array([-2,1,-3,4,-1,2,1,-5,4]))
     # two_sum([2, 7, 11, 15], 18)
