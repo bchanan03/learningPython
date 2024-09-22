@@ -1,4 +1,3 @@
-# hello world!!!
 from algorithems.stack import stack
 
 if __name__ == "__main__":
