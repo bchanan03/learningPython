@@ -62,7 +62,7 @@ def check_two_sum(nums, target):
 
 def missing_number(nums):
     n = len(nums)
-    return n * (n + 1) // 2 - sum(nums)
+    return (n + 1) * (n + 2) // 2 - sum(nums)
 
 
 def contains_duplicate(nums):
@@ -95,16 +95,20 @@ def pascal(n):
 
 
 if __name__ == '__main__':
-    # myLinkedList = SortedLinkedList()
-    # myLinkedList.add(1)
-    # myLinkedList.add(4)
-    # myLinkedList.add(5)
-    # myLinkedList.add(2)
-    # print(myLinkedList)
+    # arr = [7,8,1,9,6,4,5,3]
+    # print(missing_number(arr))
 
-    # check_two_sum([2, 3, 7, 1, 4, 11, 15,1,4], 5)
-    print(missing_number([0,1,2,4,5,6,7,8,9,10]))
-    # print(contains_duplicate([1,2,3,2,5,6,7,8,9,10]))
-    # print(max_sub_array([-2,1,-3,4,-1,2,1,-5,4]))
-    # two_sum([2, 7, 11, 15], 18)
-    # print(pascal(5))
+
+    # # myLinkedList = SortedLinkedList()
+    # # myLinkedList.add(1)
+    # # myLinkedList.add(4)
+    # # myLinkedList.add(5)
+    # # myLinkedList.add(2)
+    # # print(myLinkedList)
+    #
+    # # check_two_sum([2, 3, 7, 1, 4, 11, 15,1,4], 5)
+    # print(missing_number([0,1,2,4,5,6,7,8,9,10]))
+    # # print(contains_duplicate([1,2,3,2,5,6,7,8,9,10]))
+    # # print(max_sub_array([-2,1,-3,4,-1,2,1,-5,4]))
+    # # two_sum([2, 7, 11, 15], 18)
+    # # print(pascal(5))
